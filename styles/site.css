@@ -1,16 +1,27 @@
-body{
-    background-color: rgb(10, 0, 56);
-    color: white;
-}
-
-header{
-    background-color: rgba(46, 0, 253, 0.62);
+*{
     padding: 0px;
     margin: 0px;
-    height: 100px;
-    text-align: center;
+    height: 300vh;
+}
+
+body{
+    background-color: rgb(10, 0, 56); */
+    /color: white;  
+}
+
+nav{
+    position: fixed;
+    background-color: rgba(46, 0, 253, 0.62);
+    height: 50px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    color: white;
     font-size: 30px;
+    top: 5px;
 }
