@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(10, 0, 56);
+    color: white;
+}
+
+header{
+    background-color: rgba(46, 0, 253, 0.62);
+    padding: 0px;
+    margin: 0px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
