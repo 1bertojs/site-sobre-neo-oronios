@@ -1,27 +1,39 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    height: 300vh;
+* {
+  padding: 0px;
+  margin: 0px;
+  height: 300vh;
 }
 
-body{
-    background-color: rgb(10, 0, 56); */
-    /color: white;  
+body {
+  background-image: url(../images/neuoronio.avif);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 300vh;
+  color: white;
 }
 
-nav{
-    position: fixed;
-    background-color: rgba(46, 0, 253, 0.62);
-    height: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+nav {
+  position: fixed;
+  background-color: rgb(46, 0, 253);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
 }
 
-a{
-    position: relative;
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    top: 5px;
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  top: 5px;
+}
+
+div {
+  background-color: rgba(25, 0, 255, 0.199);
+  max-width: 85%;
+  margin: auto;
+
+  font-size: large;
 }
