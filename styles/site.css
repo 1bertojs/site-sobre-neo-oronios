@@ -27,7 +27,7 @@ body {
   background-color: rgb(0, 0, 87);
 }
 
-li a {
+.nao_ordenada li a {
   display: block;
   color: rgb(255, 255, 255);
   font-size: 1.8rem;
@@ -35,7 +35,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.nao_ordenada li a:hover {
   background-color: #0040b6;
   color: white;
 }
