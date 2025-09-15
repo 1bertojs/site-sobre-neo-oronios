@@ -190,7 +190,7 @@ body {
   left: 10%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .nao_ordenada {
     position: relative;
     top: 3rem;
