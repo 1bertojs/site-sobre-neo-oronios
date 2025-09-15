@@ -146,7 +146,7 @@ body {
 }
 
 .imagem1 {
-  width: 45%;
+  width: 25rem;
   height: auto;
   position: absolute;
   left: 50%;
@@ -359,4 +359,54 @@ body {
 
 li{
   list-style: none;
+}
+
+img {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+  object-fit: cover; 
+}
+
+
+.principal img {
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .faixa {
+    height: 4rem; 
+  }
+
+  .neuronio {
+    font-size: 3rem;
+  }
+
+  .principal img {
+    max-width: 100%;
+  }
+
+  li {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .faixa {
+    height: 3.5rem; 
+  }
+
+  .neuronio {
+    font-size: 2.5rem; 
+  }
+
+  .principal img {
+    max-width: 100%; 
+  }
+
+  li {
+    font-size: 0.875rem; 
+  }
 }
