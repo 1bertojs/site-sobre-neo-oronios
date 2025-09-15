@@ -150,7 +150,7 @@ body {
   height: auto;
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 15%;
   border: #00182c solid 3px;
 }
 
@@ -159,21 +159,21 @@ body {
 }
 
 .imagem2 {
-  width: 30%;
+  width: 20%;
   height: auto;
   border: #00182c solid 3px;
   position: absolute;
-  left: 62.5%;
-  top: 15%;
+  left: 65%;
+  top: 5%;
 }
 
 .imagem3 {
-  width: 30%;
+  width: 20%;
   height: auto;
   border: #00182c solid 3px;
   position: absolute;
-  left: 62.5%;
-  top: 50%;
+  left: 65%;
+  top: 45%;
 }
 
 .estrutura {
@@ -355,4 +355,8 @@ body {
     position: relative;
     left: 10%;
   }
+}
+
+li{
+  list-style: none;
 }
