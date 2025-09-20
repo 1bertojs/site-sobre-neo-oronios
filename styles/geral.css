@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(0, 0, 80);
+  min-height: 200vh;
+  color: white;
+  font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+.principal {
+  padding: 6.25rem;
+  background-color: white;
+  max-width: 50%;
+  margin: auto;
+  min-height: 200vh;
+  color: #00182c;
+  font-size: 1.25rem;
+  font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+  line-height: 1.8;
+}
+
+.principal div {
+  border: #00182c solid 0.188rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  position: relative;
+  width: 100%;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.07);
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  box-sizing: border-box;
+}
+
+.neuronio {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+  letter-spacing: 0.03em;
+}
+
+.menu {
+  display: block;
+  opacity: 0;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: 0.2s ease-in-out;
+  z-index: 5;
+}
+
+.nao_ordenada {
+  position: relative;
+  top: 5rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 18rem;
+  background-color: rgb(0, 0, 80);
+}
+
+.nao_ordenada li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.nao_ordenada li:hover {
+  background-color: #0040b6;
+  color: white;
+}
+
+.checkbox {
+  opacity: 0;
+  position: fixed;
+  height: 5rem;
+  width: 5rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.botao-menu {
+  background-color: rgb(0, 0, 80);
+  color: white;
+  cursor: pointer;
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  justify-items: center;
+}
+
+.botao-menu div {
+  position: absolute;
+  display: block;
+  height: 0.45rem;
+  width: 80%;
+  border-radius: 2.8125rem;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.botao-menu div:nth-child(1) {
+  top: 0.7rem;
+}
+
+.botao-menu div:nth-child(2) {
+  top: 1.9rem;
+}
+
+.botao-menu div:nth-child(3) {
+  top: 3.1rem;
+}
+
+.checkbox:checked ~ .botao-menu div:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 1.875rem;
+}
+
+.checkbox:checked ~ .botao-menu div:nth-child(2) {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .botao-menu div:nth-child(3) {
+  transform: rotate(45deg);
+  top: 1.875rem;
+}
+
+.checkbox:checked ~ .menu {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.faixa {
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(0, 0, 80);
+  position: fixed;
+  z-index: 10;
+}
+
+[id] {
+  scroll-margin: 6rem;
+}
+
+.imagem1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.imagens-funcao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.imagem2,
+.imagem3 {
+  display: flex;
+  margin-left: auto;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.imagem4,
+.imagem5,
+.imagem6 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#funcao {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#imagem-funcao {
+  text-align: center;
+}
+
+.estrutura {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+    min-height: 100vh;
+  }
+
+  .principal {
+    padding: 1rem;
+    max-width: 100%;
+    font-size: 1rem;
+    min-height: 100vh;
+  }
+
+  .principal div {
+    border-width: 1.5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .faixa {
+    height: 3rem;
+  }
+
+  .neuronio {
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .imagens-funcao {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .funcao {
+    max-width: 100%;
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+    text-align: left;
+  }
+
+  .estrutura {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  #funcao {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .imagem1,
+  .imagem2,
+  .imagem3,
+  .imagem4,
+  .imagem5,
+  .imagem6 {
+    width: 100%;
+    height: auto;
+  }
+
+  .nao_ordenada {
+    width: 100vw;
+    top: 3rem;
+  }
+
+  .nao_ordenada li a {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.5rem;
+  }
+  [id] {
+    scroll-margin: 4rem;
+  }
+  .botao-menu {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .botao-menu div {
+    height: 0.25rem;
+    width: 70%;
+    border-radius: 1rem;
+  }
+
+  .botao-menu div:nth-child(1) {
+    top: 0.5rem;
+  }
+  .botao-menu div:nth-child(2) {
+    top: 1.2rem;
+  }
+  .botao-menu div:nth-child(3) {
+    top: 1.9rem;
+  }
+
+  .checkbox {
+    height: 3rem;
+    width: 3rem;
+  }
+}

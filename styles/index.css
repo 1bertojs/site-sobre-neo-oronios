@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(0, 0, 80);
+}
+header {
+  margin-top: 10%;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.875rem;
+  margin: 1.25rem;
+}
+.links {
+  text-align: center;
+  margin-top: 5%;
+  gap: 20px;
+}
